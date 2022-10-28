@@ -47,6 +47,10 @@ header {
     color: white;
 }
 
+.header-navigation_item a:hover {
+    color: #E3B873;
+}
+
 .logo {
     color: #E3B873;
     text-transform: uppercase;
@@ -272,7 +276,7 @@ h3 {
     z-index: 1;
 }
 
-.camera {
+.icons {
     z-index: 1;
     display: flex;
     flex-direction: row;
@@ -280,7 +284,7 @@ h3 {
     align-items: center;
 }
 
-.camera-img {
+.icon-img {
     width: 33px;
     height: 28px;
     margin: 0 8px;
@@ -323,12 +327,13 @@ h3 {
     box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
 } */
 
-.line1 {
+hr {
     width: 55px;
     height: 2px;
-    margin-left: 381px;
-    background: #E3B873;
+    background-color: #E3B873;
     border-radius: 30px;
+    border-style: none;
+    border-width: 0;
 }
 
 .p-control {
@@ -342,4 +347,299 @@ h3 {
     line-height: 37px;
     text-align: center;
     color: #363636;
+}
+
+.authorization {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 92px;
+}
+
+.authorization-item {
+    margin-left: 58px;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.authorization-input {
+    border: 0;
+    border-bottom: 231px;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #363636;
+}
+
+.authorization-button {
+    margin-left: 49px;
+    width: 200px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    padding: 20px 75px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.authorization-checkbox {
+    margin-top: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.checkbox {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+/* .checkbox::checked {
+    background: #E3B873;
+    color: #FFFFFF;
+    border-radius: 1px;
+} */
+
+.checkbox-label {
+    margin-left: 9px;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #181818;
+}
+
+.types {
+    width: 1236px;
+    height: 706px;
+    margin: auto;
+    margin-top: 148px;
+    display: flex;
+    flex-direction: column;
+}
+
+.types-control {
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    padding-bottom: 13px;
+    z-index: 1;
+}
+
+.repairs {
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.repairs-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.repairs-info_item {
+    width: 330px;
+    height: 286px;
+    margin: -127px 31px 0;
+}
+
+.repairs-list {
+    margin: 0;
+    padding: 25px 34px 49px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    list-style-position: inside;
+}
+
+.repairs-list_item {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.prices_item {
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 17px 27px;
+}
+
+.request {
+    width: 1236px;
+    height: 725px;
+    margin-top: 124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.description {
+    width: 703px;
+    height: 645px;
+    margin-right: 131px;
+    background-image: url(./images/image4.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 106px;
+    width: 506px;
+    height: 509px;
+    background-color: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.description-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 102px;
+    padding-left: 249px;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+
+.description-item {
+    margin-right: 14px;
+    width: 42px;
+    height: 42px;
+    background: #E3B873;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius: 30px;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.request-form_item {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.request-info {
+    margin: 39px 49px 48px;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.request-info_item {
+    width: 408px;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.request-button {
+    margin-left: 244px;
+    width: 213px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    outline: 0;
+    border: 0;
+    padding: 18px 21px;
+    text-transform: uppercase;
+    color: white;  
+}
+
+.request-checkbox {
+    margin: -32px 49px 39px;
+    display: flex;
+    flex-direction: row;
+}
+
+.request-checkbox_item {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.request-label {
+    padding-left: 8px;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.sale {
+
+}
+
+.sale-info {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
