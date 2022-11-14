@@ -66,6 +66,7 @@ header {
 }
 
 .button {
+    padding-right: 90px;
     background-color: #E3B873;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     border-radius: 2px;
@@ -269,6 +270,10 @@ td {
 
 .projects_img {
     margin-top: 45px;
+    width: 679px;
+    height: 482px;
+    background-image: url(./images/image2-1.png);
+    background-size: cover;
 }
 
 .control {
@@ -498,7 +503,7 @@ hr {
 }
 
 .repairs-list {
-    margin: 0;
+    margin-bottom: -12px;
     padding: 25px 34px 49px;
     background-color: #FFFFFF;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
@@ -566,11 +571,28 @@ hr {
     box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
 }
 
+.description_part1 {
+    margin-top: 109px;
+    margin-left: 249px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description_part2 {
+    margin-top: 117px;
+    margin-left: 9px;
+    height: 472px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .description-text {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 111px;
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -579,16 +601,10 @@ hr {
     color: #363636;
 }
 
-.half {
-    margin-top: 125px;
-}
-
 .description-item {
-    margin: 102px 14px 0 249px;
-    margin-top: 102px;
-    margin-right: 14px;
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 50px;
+    padding: 5px 5px 11px 4px;
     background: #E3B873;
     border: 8px solid #FFFFFF;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
@@ -1076,13 +1092,14 @@ footer {
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
     .container {
         max-width: 375px;
         margin: 0 auto;
     }
 
     .header-content {
+        padding: 0 18px;
         font-size: 11px;
         line-height: 15px;
         display: flex;
@@ -1106,12 +1123,6 @@ footer {
     }
     
     .button {
-        background-color: #E3B873;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-        border-radius: 2px;
-        outline: 0;
-        border: 0;
-        padding: 13px 33px;
         display: none;
     }
 
@@ -1125,6 +1136,7 @@ footer {
     
     .start-content {
         max-width: 375px;
+        padding: 0 18px;
         position: relative;
         z-index: 1;
     }
@@ -1138,11 +1150,7 @@ footer {
         text-transform: uppercase;
         color: #FFFFFF;
     }
-    
-    .city {
-        color: #E3B873;
-    }
-    
+
     p {
         font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         font-style: normal;
@@ -1161,22 +1169,10 @@ footer {
         width: 339px;
         height: 51px;
         margin-bottom: 26px;
-        outline: 0;
-        font-style: italic;
-        text-transform: uppercase;
-        color: white;
-        border: 1px solid #FFFFFF;
-        border-radius: 2px;
-        background-color: rgb(0, 0, 0, 0);
     }
-    
-    .button_item:hover {
-        background: #E3B873;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-    }
-    
+
     .projects-backgroud {
-        background-color: black;
+        background-color: #131313;
         padding-top: 36px;
         position: relative;
     }
@@ -1222,7 +1218,7 @@ footer {
     }
     
     .table-projects {
-        padding: 278px 16px 0;
+        padding: 130px 16px 0;
     }
 
     th {
@@ -1266,19 +1262,21 @@ footer {
     }
 
     .projects_img {
-        position: absolute;
         display: flex;
         width: 340px;
         height: 241px;
-        margin-top: -537px;      
+        margin-top: -537px;
+        background-image: url(./images/image2.png);
+        background-size: cover;    
     }
 
     .arrows {
+        z-index: 2;
         width: 340px;
-        padding: 0 14px;
+        padding: 124px 14px 0;
         display: flex;
         justify-content: space-between;
-        margin: -435px 14px 0; 
+        margin: 0 18px;
     }
 
     .arrow {
@@ -1291,10 +1289,12 @@ footer {
     }
     
     .control-background {
-        background-color: black;
+        background-color: #131313;
+        margin-top: -1px;
     }
     
     .control {
+        margin-top: -15px;
         width: 375px;
         height: 765px;
         margin: auto;
@@ -1337,9 +1337,8 @@ footer {
     }
     
     .video {
-        margin-top: 31px;
-        margin-bottom: 28px;
-        padding: 85px 188px;
+        margin: 31px 18px 28px;
+        padding: 85px 170px;
         width: 340px;
         height: 207px;
         background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(./images/image3.png);
@@ -1373,7 +1372,7 @@ footer {
     
     .p-control {
         padding-top: 21px;
-        margin: 0;
+        margin: 0 18px;
         justify-content: center;
         font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         font-style: normal;
@@ -1389,6 +1388,7 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         margin-top: 61px;
+        margin-left: 18px;
     }
     
     .authorization-item {
@@ -1405,8 +1405,8 @@ footer {
     .authorization-input {
         border: 0;
         width: 340px;
-        background-color: black;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: #131313;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
         font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1436,12 +1436,13 @@ footer {
     .authorization-checkbox {
         margin-top: -113px;
         margin-bottom: 63px;
+        margin-left: 18px;
         display: flex;
         flex-direction: row;
     }
 
     .checkbox-label {
-        padding-right: 90px;
+        padding-right: 72px;
         margin-left: 0px;
         font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         font-style: normal;
@@ -1458,9 +1459,9 @@ footer {
     .types {
         width: 375px;
         margin-top: 0px;
-        margin: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     
     .types-control {
@@ -1478,36 +1479,45 @@ footer {
     
     .repairs {
         width: 375px;
-        margin-left: 0px;
+        height: 1451px;
+        margin-left: 2px;
         margin-top: 40px;
+        padding: 0 18px;
         display: flex;
         flex-direction: column;
     }
-    
+
+    .repairs-img {
+        width: 340px;
+        height: 365px;
+    }
     .repairs-info {
-        width: 1236px;
-        margin-left: 103px;
+        margin-left: 0;
+        margin-top: -1244px;
+        padding: 0 18px;
+        width: 375px;
+        height: 1327px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
     
     .repairs-info_item {
-        width: 330px;
-        height: 286px;
-        margin: -127px 31px 0;
+        width: 270px;
+        height: 241px;
+        margin: 0;
     }
     
     .repairs-list {
-        margin: 0;
-        padding: 25px 34px 49px;
+        margin-bottom: -10px;
+        padding: 21px 31px 47px;
         background-color: #FFFFFF;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
         font-family: 'Yeseva One', 'Times New Roman', Times, serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 15px;
+        line-height: 21px;
         color: #363636;
         list-style-position: inside;
     }
@@ -1517,7 +1527,7 @@ footer {
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
-        line-height: 27px;
+        line-height: 22px;
         color: #959595;
     }
     
@@ -1529,93 +1539,116 @@ footer {
         font-family: 'Yeseva One', 'Times New Roman', Times, serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 15px;
+        line-height: 21px;
         text-transform: uppercase;
         color: #FFFFFF;
-        padding: 17px 27px;
+        padding: 12px 17px;
     }
     
     .request {
-        width: 1440px;
-        height: 725px;
-        margin-top: 124px;
-        display: flex;
-        flex-direction: row;
-        justify-self: start;
-        justify-content: flex-start;
+        display: none;
     }
     
-    .description {
-        width: 703px;
-        height: 645px;
-        margin-right: 131px;
-        background-image: url(./images/image4.png);
+    .fantasies-background {
+        background-image: none;
         background-size: cover;
-        display: flex;
-        flex-direction: row;
     }
     
-    .request-form {
+    .fantasies {
+        margin-top: 95px;
+        height: 322px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-top: 106px;
-        width: 506px;
-        height: 509px;
-        background-color: #131313;
-        box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        position: relative;
     }
     
-    .description-text {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 111px;
-        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 19px;
-        color: #363636;
+    .fantasies_part1 {
+        z-index: 1;
+        width: 587px;
     }
     
-    .half {
-        margin-top: 125px;
-    }
-    
-    .description-item {
-        margin: 102px 14px 0 249px;
-        margin-top: 102px;
-        margin-right: 14px;
-        width: 42px;
-        height: 42px;
-        background: #E3B873;
-        border: 8px solid #FFFFFF;
-        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
-        border-radius: 30px;
+    .title-fantasies {
+        width: 375px;
+        margin-top: 0px;
+        margin-left: 0px;
         font-family: 'Yeseva One', 'Times New Roman', Times, serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        text-align: center;
-        color: #FFFFFF;
+        font-size: 22px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #E3B873;
     }
     
-    .request-form_item {
-        margin-top: 110px;
-        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    .fantasies-list {
+        display: none;
+    }
+    
+    .fantasies-list_item {
+        display: none;
+    }
+
+    .fantasies-img_part1 {
+        display: flex;
+        width: 340px;
+        height: 242px;
+        margin: -144px auto;
+        background-image: url(./images/fantasies.png);
+        background-size: cover;
+    }
+    
+    .fantasies-img_part2 {
+        display: none;
+    }
+    
+    .fantasies-img_item {
+        display: none;
+    }
+
+    .clients {
+        display: none;
+    }
+
+    .questions-background {
+        background-color:#131313;
+    }
+
+    .questions {
+        padding-left: 18px;
+        width: 375px;
+        height: 690px;
+        background-color: none;
+        margin-top: -121px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .questions_item {
+        margin: 0;
+        padding: 173px 0 52px;
+        font-family: 'Yeseva One';
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 20px;
+        line-height: 28px;
         text-align: center;
+        text-transform: uppercase;
         color: #FFFFFF;
     }
     
-    .request-info {
-        margin: 39px 49px 48px;
+    .questions-box {
+        width: 375px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .questions-info {
+        padding-bottom: 63px;
         font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -1624,83 +1657,162 @@ footer {
         color: rgba(255, 255, 255, 0.5);
     }
     
-    .request-info_item {
-        width: 408px;
+    .questions-info_item {
+        width: 340px;
         font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 23px;
         border: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
         background-color: rgb(0, 0, 0, 0);
     }
     
-    .request-info_item::placeholder {
+    .questions-info_item::placeholder {
         color: #FFFFFF;
     }
     
-    .request-button {
-        margin-left: 244px;
-        width: 213px;
+    .questions-info1 {
+        margin-left: 0px;
+        margin-top: 0px;
+        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 21px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .questions-info_item1 {
+        width: 340px;
+        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+        background-color: rgb(0, 0, 0, 0);
+    }
+    
+    .questions-info_item1::placeholder {
+        color: #FFFFFF;
+    }
+    
+    .questions-checkbox {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .quest {
+        padding: 0;
+        padding-right: 74px;
+        margin-left: 0px;
+        white-space: nowrap;
+        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+    }
+    
+    .questions-button {
+        margin-top: 67px;
+        margin-left: 0px;
+        width: 340px;
         height: 51px;
         background: #E3B873;
         box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
         outline: 0;
         border: 0;
-        padding: 18px 21px;
+        padding: 18px 144px;
         text-transform: uppercase;
         color: white;  
     }
     
-    .request-checkbox {
-        margin: -32px 49px 39px;
+    .map-background {
+        background-image: none;
+        background-color: #131313;
+        background-size: cover;
+    }
+    
+    .map {
+        height: 525px;
+        margin-top: -1px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     
-    .req {
-        margin-left: 9px;
-        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 23px;
-        color: #FFFFFF;
-    }
-    
-    .sale {
-        margin-left: 31px;
-        width: 441px;
-        height: 72px;
-        margin-top: 65px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .piggy {
-        margin-right: 25px;
-        width: 72px;
-        height: 72px;
-        border-radius: 50%;
-        background-color: #E3B873;
-    }
-    
-    .piggy-img {
-        width: 40px;
-        height: 33px;
-        margin: 19px 16px;
-    }
-    
-    .sale-info {
-        font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    .map-text {
+        z-index: 1;
+        margin-top: 342px;
+        font-family: 'Yeseva One', 'Times New Roman', Times, serif;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
-        line-height: 26px;
+        line-height: 25px;
+        text-align: center;
+        text-transform: uppercase;
         color: #E3B873;
-        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+    
+    .contact-links {
+        margin-top: 26px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .contact-img {
+        width: 17px;
+        height: 17px;
+    }
+
+    .contact-links_item1 {
+        z-index: 1;
+        margin-right: 21px;
+        margin-bottom: 49px;
+        padding: 11px 11px;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background: #E3B873;
+    }
+    
+    .contact-links_item2 {
+        z-index: 1;
+        margin-right: 21px;
+        margin-bottom: 49px;
+        padding: 11px;
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background: #E3B873;
+    }
+    
+    .map-frame {
+        width: 340px;
+        height: 242px;
+        margin-left: 18px;
+        margin-top: -475px;
+    }
+    
+    footer {
+        background-color: #131313;
+    }
+    
+    .footer-content {
+        margin-top: -1px;
+        font-size: 11px;
+        line-height: 15px;
+        display: flex;
+        justify-content: space-between;
+        height: 55px;
+        align-items: center;
     }
     
 }
